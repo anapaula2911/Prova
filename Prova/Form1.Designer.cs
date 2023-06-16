@@ -38,7 +38,13 @@
             label8 = new Label();
             button1 = new Button();
             button2 = new Button();
-            checkBox1 = new CheckBox();
+            textBox1 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            textBox5 = new TextBox();
+            textBox6 = new TextBox();
+            comboBox1 = new ComboBox();
+            textBox2 = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -112,11 +118,12 @@
             label7.AutoSize = true;
             label7.BackColor = Color.MistyRose;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(433, 131);
+            label7.Location = new Point(435, 97);
             label7.Name = "label7";
             label7.Size = new Size(37, 21);
             label7.TabIndex = 8;
             label7.Text = "CPF";
+            label7.Click += label7_Click;
             // 
             // label8
             // 
@@ -132,9 +139,10 @@
             // button1
             // 
             button1.BackColor = Color.MistyRose;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button1.Location = new Point(128, 333);
             button1.Name = "button1";
-            button1.Size = new Size(75, 37);
+            button1.Size = new Size(94, 37);
             button1.TabIndex = 10;
             button1.Text = "Cadastrar";
             button1.UseVisualStyleBackColor = false;
@@ -142,30 +150,90 @@
             // button2
             // 
             button2.BackColor = Color.MistyRose;
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button2.Location = new Point(427, 333);
             button2.Name = "button2";
-            button2.Size = new Size(75, 37);
+            button2.Size = new Size(94, 37);
             button2.TabIndex = 11;
             button2.Text = "Cancelar";
             button2.UseVisualStyleBackColor = false;
             // 
-            // checkBox1
+            // textBox1
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(0, 0);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(83, 19);
-            checkBox1.TabIndex = 12;
-            checkBox1.Text = "checkBox1";
-            checkBox1.UseVisualStyleBackColor = true;
-            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            textBox1.BackColor = Color.MistyRose;
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.Location = new Point(209, 95);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(192, 23);
+            textBox1.TabIndex = 13;
+            // 
+            // textBox3
+            // 
+            textBox3.BackColor = Color.MistyRose;
+            textBox3.BorderStyle = BorderStyle.FixedSingle;
+            textBox3.Location = new Point(209, 133);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(192, 23);
+            textBox3.TabIndex = 15;
+            // 
+            // textBox4
+            // 
+            textBox4.BackColor = Color.MistyRose;
+            textBox4.BorderStyle = BorderStyle.FixedSingle;
+            textBox4.Location = new Point(209, 215);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(192, 23);
+            textBox4.TabIndex = 16;
+            // 
+            // textBox5
+            // 
+            textBox5.BackColor = Color.MistyRose;
+            textBox5.BorderStyle = BorderStyle.FixedSingle;
+            textBox5.Location = new Point(228, 263);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(173, 23);
+            textBox5.TabIndex = 17;
+            // 
+            // textBox6
+            // 
+            textBox6.BackColor = Color.MistyRose;
+            textBox6.BorderStyle = BorderStyle.FixedSingle;
+            textBox6.Location = new Point(476, 265);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(168, 23);
+            textBox6.TabIndex = 18;
+            // 
+            // comboBox1
+            // 
+            comboBox1.BackColor = Color.MistyRose;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Médico", "Téquinico em Informática", "Administração" });
+            comboBox1.Location = new Point(209, 171);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(192, 23);
+            comboBox1.TabIndex = 19;
+            // 
+            // textBox2
+            // 
+            textBox2.BackColor = Color.MistyRose;
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            textBox2.Location = new Point(478, 99);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(166, 23);
+            textBox2.TabIndex = 20;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(checkBox1);
+            Controls.Add(textBox2);
+            Controls.Add(comboBox1);
+            Controls.Add(textBox6);
+            Controls.Add(textBox5);
+            Controls.Add(textBox4);
+            Controls.Add(textBox3);
+            Controls.Add(textBox1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label8);
@@ -194,6 +262,12 @@
         private Label label8;
         private Button button1;
         private Button button2;
-        private CheckBox checkBox1;
+        private TextBox textBox1;
+        private TextBox textBox3;
+        private TextBox textBox4;
+        private TextBox textBox5;
+        private TextBox textBox6;
+        private ComboBox comboBox1;
+        private TextBox textBox2;
     }
 }
