@@ -16,5 +16,17 @@ namespace Prova
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string matricula = labMatricula.Text;
+            string nome = labNome.Text;
+            string funcao = labFuncao.Text;
+            string cpf = labCPF.Text;
+            string jrpf = labJRPF.Text;
+            int salario = Convert.ToInt32(labSalario.Text);
+
+
+        }
     }
 }

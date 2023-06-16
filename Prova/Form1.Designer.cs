@@ -29,22 +29,21 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
+            labMatricula = new Label();
+            labNome = new Label();
+            labFuncao = new Label();
+            labSalario = new Label();
+            labCPF = new Label();
+            labJRPF = new Label();
             button1 = new Button();
             button2 = new Button();
             textBox1 = new TextBox();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
-            textBox5 = new TextBox();
             textBox6 = new TextBox();
             comboBox1 = new ComboBox();
-            textBox2 = new TextBox();
+            checkBox1 = new CheckBox();
+            maskedTextBox1 = new MaskedTextBox();
             SuspendLayout();
             // 
             // label1
@@ -58,102 +57,92 @@
             label1.TabIndex = 2;
             label1.Text = "CADASTRO DE FUNCIONÁRIO";
             // 
-            // label2
+            // labMatricula
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.MistyRose;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(128, 97);
-            label2.Name = "label2";
-            label2.Size = new Size(75, 21);
-            label2.TabIndex = 3;
-            label2.Text = "Matricula";
+            labMatricula.AutoSize = true;
+            labMatricula.BackColor = Color.MistyRose;
+            labMatricula.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labMatricula.Location = new Point(128, 97);
+            labMatricula.Name = "labMatricula";
+            labMatricula.Size = new Size(75, 21);
+            labMatricula.TabIndex = 3;
+            labMatricula.Text = "Matricula";
             // 
-            // label3
+            // labNome
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.MistyRose;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(128, 131);
-            label3.Name = "label3";
-            label3.Size = new Size(53, 21);
-            label3.TabIndex = 4;
-            label3.Text = "Nome";
+            labNome.AutoSize = true;
+            labNome.BackColor = Color.MistyRose;
+            labNome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labNome.Location = new Point(133, 146);
+            labNome.Name = "labNome";
+            labNome.Size = new Size(53, 21);
+            labNome.TabIndex = 4;
+            labNome.Text = "Nome";
             // 
-            // label4
+            // labFuncao
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.MistyRose;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(128, 169);
-            label4.Name = "label4";
-            label4.Size = new Size(60, 21);
-            label4.TabIndex = 5;
-            label4.Text = "Função";
+            labFuncao.AutoSize = true;
+            labFuncao.BackColor = Color.MistyRose;
+            labFuncao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labFuncao.Location = new Point(128, 194);
+            labFuncao.Name = "labFuncao";
+            labFuncao.Size = new Size(60, 21);
+            labFuncao.TabIndex = 5;
+            labFuncao.Text = "Função";
             // 
-            // label5
+            // labSalario
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.MistyRose;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(128, 213);
-            label5.Name = "label5";
-            label5.Size = new Size(58, 21);
-            label5.TabIndex = 6;
-            label5.Text = "Salário";
+            labSalario.AutoSize = true;
+            labSalario.BackColor = Color.MistyRose;
+            labSalario.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labSalario.Location = new Point(128, 249);
+            labSalario.Name = "labSalario";
+            labSalario.Size = new Size(58, 21);
+            labSalario.TabIndex = 6;
+            labSalario.Text = "Salário";
             // 
-            // label6
+            // labCPF
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.MistyRose;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(128, 263);
-            label6.Name = "label6";
-            label6.Size = new Size(94, 21);
-            label6.TabIndex = 7;
-            label6.Text = "Salário Total";
+            labCPF.AutoSize = true;
+            labCPF.BackColor = Color.MistyRose;
+            labCPF.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labCPF.Location = new Point(435, 97);
+            labCPF.Name = "labCPF";
+            labCPF.Size = new Size(37, 21);
+            labCPF.TabIndex = 8;
+            labCPF.Text = "CPF";
+            labCPF.Click += label7_Click;
             // 
-            // label7
+            // labJRPF
             // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.MistyRose;
-            label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(435, 97);
-            label7.Name = "label7";
-            label7.Size = new Size(37, 21);
-            label7.TabIndex = 8;
-            label7.Text = "CPF";
-            label7.Click += label7_Click;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.MistyRose;
-            label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(427, 263);
-            label8.Name = "label8";
-            label8.Size = new Size(43, 21);
-            label8.TabIndex = 9;
-            label8.Text = "JRPF";
+            labJRPF.AutoSize = true;
+            labJRPF.BackColor = Color.MistyRose;
+            labJRPF.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            labJRPF.Location = new Point(435, 171);
+            labJRPF.Name = "labJRPF";
+            labJRPF.Size = new Size(43, 21);
+            labJRPF.TabIndex = 9;
+            labJRPF.Text = "JRPF";
             // 
             // button1
             // 
             button1.BackColor = Color.MistyRose;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(128, 333);
+            button1.Location = new Point(128, 325);
             button1.Name = "button1";
-            button1.Size = new Size(94, 37);
+            button1.Size = new Size(129, 45);
             button1.TabIndex = 10;
             button1.Text = "Cadastrar";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
             button2.BackColor = Color.MistyRose;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Location = new Point(427, 333);
+            button2.Location = new Point(515, 325);
             button2.Name = "button2";
-            button2.Size = new Size(94, 37);
+            button2.Size = new Size(129, 45);
             button2.TabIndex = 11;
             button2.Text = "Cancelar";
             button2.UseVisualStyleBackColor = false;
@@ -171,7 +160,7 @@
             // 
             textBox3.BackColor = Color.MistyRose;
             textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.Location = new Point(209, 133);
+            textBox3.Location = new Point(209, 146);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(192, 23);
             textBox3.TabIndex = 15;
@@ -180,27 +169,18 @@
             // 
             textBox4.BackColor = Color.MistyRose;
             textBox4.BorderStyle = BorderStyle.FixedSingle;
-            textBox4.Location = new Point(209, 215);
+            textBox4.Location = new Point(209, 247);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(192, 23);
             textBox4.TabIndex = 16;
-            // 
-            // textBox5
-            // 
-            textBox5.BackColor = Color.MistyRose;
-            textBox5.BorderStyle = BorderStyle.FixedSingle;
-            textBox5.Location = new Point(228, 263);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(173, 23);
-            textBox5.TabIndex = 17;
             // 
             // textBox6
             // 
             textBox6.BackColor = Color.MistyRose;
             textBox6.BorderStyle = BorderStyle.FixedSingle;
-            textBox6.Location = new Point(476, 265);
+            textBox6.Location = new Point(484, 169);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(168, 23);
+            textBox6.Size = new Size(160, 23);
             textBox6.TabIndex = 18;
             // 
             // comboBox1
@@ -208,41 +188,53 @@
             comboBox1.BackColor = Color.MistyRose;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Médico", "Téquinico em Informática", "Administração" });
-            comboBox1.Location = new Point(209, 171);
+            comboBox1.Location = new Point(209, 192);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(192, 23);
             comboBox1.TabIndex = 19;
             // 
-            // textBox2
+            // checkBox1
             // 
-            textBox2.BackColor = Color.MistyRose;
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(478, 99);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(166, 23);
-            textBox2.TabIndex = 20;
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(0, 0);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(83, 19);
+            checkBox1.TabIndex = 20;
+            checkBox1.Text = "checkBox1";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // maskedTextBox1
+            // 
+            maskedTextBox1.BackColor = Color.MistyRose;
+            maskedTextBox1.BorderStyle = BorderStyle.FixedSingle;
+            maskedTextBox1.Location = new Point(484, 95);
+            maskedTextBox1.Mask = "000,000,000-00";
+            maskedTextBox1.Name = "maskedTextBox1";
+            maskedTextBox1.Size = new Size(160, 23);
+            maskedTextBox1.TabIndex = 22;
+            maskedTextBox1.TextMaskFormat = MaskFormat.IncludePrompt;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.InactiveCaption;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
+            Controls.Add(maskedTextBox1);
+            Controls.Add(checkBox1);
             Controls.Add(comboBox1);
             Controls.Add(textBox6);
-            Controls.Add(textBox5);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox1);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(labJRPF);
+            Controls.Add(labCPF);
+            Controls.Add(labSalario);
+            Controls.Add(labFuncao);
+            Controls.Add(labNome);
+            Controls.Add(labMatricula);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
@@ -253,21 +245,20 @@
         #endregion
 
         private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
+        private Label labMatricula;
+        private Label labNome;
+        private Label labFuncao;
+        private Label labSalario;
+        private Label labCPF;
+        private Label labJRPF;
         private Button button1;
         private Button button2;
         private TextBox textBox1;
         private TextBox textBox3;
         private TextBox textBox4;
-        private TextBox textBox5;
         private TextBox textBox6;
         private ComboBox comboBox1;
-        private TextBox textBox2;
+        private CheckBox checkBox1;
+        private MaskedTextBox maskedTextBox1;
     }
 }
