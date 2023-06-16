@@ -26,7 +26,8 @@ namespace Prova
             string jrpf = labJRPF.Text;
             int salario = Convert.ToInt32(labSalario.Text);
 
-
+            Funcionario funcionario = new Funcionario(funcao);
+            MessageBox.Show();
         }
     }
 }
